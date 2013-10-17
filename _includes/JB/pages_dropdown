@@ -1,0 +1,14 @@
+<ul class="dropdown-menu">
+{% for node in pages_list %}
+{% if node.group == drop_group %}
+  <li><a href="">
+    {% if node.img != null %}
+      <img src="http://posva.net/" class="simple" width="24" height="24"/>
+    {% endif %}
+     </a></li>
+  {% endif %}
+{% endfor %}
+</ul>
+
+{% assign pages_list = nil %}
+{% assign drop_group = nil %}

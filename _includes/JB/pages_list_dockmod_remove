@@ -1,0 +1,46 @@
+{% if site.JB.pages_list.provider == "custom" %}
+  {% include custom/pages_list %}
+{% else %}
+  {% for node in pages_list %}
+    {% if node.title != null and node.group != "hide" %}
+      {% if group == null or group == node.group %}
+        {% if page.url == node.url %}
+          <li class="active"><a href="" class="active">
+          {% if page.img != null %}
+            <img src="/" class="simple" width="24" height="24"/> 
+          {% endif %}
+          </a></li>
+        {% elsif node.dropdown != null and node.dropdown == page.group %}
+          <li class="active dropdown">
+          <a href="#" class="dropdown-toggle active" data-toggle="dropdown">
+          {% if page.img != null %}
+            <img src="/" class="simple" width="24" height="24"/> 
+          {% endif %}
+          Custom icons for pages<b class="caret"></b></a>
+          {% assign drop_group = node.dropdown %}
+          {% include JB/pages_dropdown %}
+          </li>
+        {% elsif node.dropdown != null%}
+          <li class="dropdown">
+          <a href="" class="dropdown-toggle" data-toggle="dropdown">
+          {% if node.img != null %}
+            <img src="/" class="simple" width="16" height="16"/> 
+          {% endif %}
+          <b class="caret"></b></a>
+          {% assign drop_group = node.dropdown %}
+          {% include JB/pages_dropdown %}
+          </li>
+        {% else %}
+          <li><a href="">
+          {% if node.img != null %}
+            <img src="/" class="simple" width="24" height="24"/> 
+          {% endif %}
+          </a></li>
+        {% endif %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
+{% assign pages_list = nil %}
+{% assign group = nil %}
