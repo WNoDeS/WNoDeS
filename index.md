@@ -8,6 +8,6 @@ During the last years INFN has worked in several European projects with the aim 
 
 These pages collect the work that is being carried on at INFN on the integration between Grid and Cloud services. We are mainly focusing efforts on the following two themes:
 
-* [Dynamic Provisioning of Virtual Worker Nodes](/documentation/vwn_dynamic_provisioning.html)
+* [Dynamic Provisioning of Virtual Worker Nodes]({{site.baseurl}}/documentation/vwn_dynamic_provisioning.html)
 
-* [Use of Grid Resourses through Cloud (IaaS) interfaces](/documentation/grid_resources_through_cloud_interfaces.html)
+* [Use of Grid Resourses through Cloud (IaaS) interfaces]({{site.baseurl}}/documentation/grid_resources_through_cloud_interfaces.html)
