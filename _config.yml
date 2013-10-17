@@ -138,8 +138,8 @@ JB :
 #baseurl: .
 
 issue_base_url: "https://issues.infn.it/browse/"
-website_base_url: "http://italiangrid.github.io/wnodes"
-repo_base_url: "https://github.com/italiangrid"
+website_base_url: "http://wnodes.github.io/wnodes"
+repo_base_url: "https://github.com/wnodes"
 
 sysadmin_guide_version: 2.2.0
 functional_description_version: 2.2.0
