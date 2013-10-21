@@ -5,7 +5,27 @@ description: ""
 ---
 {% include JB/setup %}
 
-## Documentation
+
+The Worker Nodes on Demands Service (WNoDeS) is a software INFN is developing. It is built around a tight integration with a LRMS (a "batch system") and is running in production at the INFN Tier-1 Computing Center. Its main characteristics are:
+
+* Full integration with existing computing resource scheduling, policing, monitoring and accounting workflows.
+* On-demand virtual resource provisioning and VLAN support to dynamically isolate Virtual Machines depending on service type / customer requests.
+* Support for users to select and access WNoDeS-based resources through Grid, Cloud interfaces, or also through direct job submissions.
+
+The WNoDeS focus is on Everything as a Service, where Everything may be hardware, software, data, platform, infrastructure.
+
+WNoDeS dynamically provides virtualized and customized computing resources on demand. Virtualized resources can be used to run applications software, interactive analysis, software development, services and so on. In a few words, WNoDeS lets local, Grid and cloud computing converge upon Dynamically Provided Virtualized Resources.
+
+* [Overall architectural framework]()
+* [WNoDeS workflow]()
+* [WNoDeS Process Flow]()
+* [Virtual Image Selection and Loading]()
+* [Monitoring and Logging]()
+* [Deployment Experience]()
+* [Current Status]()
+* [New Features]()
+
+
 #### [Release Notes, version 3.0.0-1 for EMI3](https://web2.infn.it/wnodes/images/stories/doc/releasenotes-wnodes-v3.0.0-1.pdf)&nbsp;<span class="label label-success">new</span>
 The WNoDeS Product Team is pleased to announce the release of StoRM 3.0.0-1
 
@@ -31,11 +51,44 @@ Test Plan
 
 ### Other resources:
 
-#### [Frequently Asked Questions](/documentation/faq.html)
-
-Questions from the StoRM user community.
-
 #### [License EUPL](http://joinup.ec.europa.eu/system/files/EN/EUPL%20v.1.1%20-%20Licence.pdf)
+
+___
+
+### Old versions
+
+#### The following documents are for WNoDeS version 2.0.3-3:
+* [System Administration Guide, version 1.0.1-1 for EMI2](https://web2.infn.it/wnodes/images/stories/doc/wnodes-sysadminguide_v_1_0_1_1.pdf)
+* [Test Plan, version 1.0.1-1 for EMI2](https://web2.infn.it/wnodes/images/stories/doc/wnodes-testplan_v_1_0_0_2.pdf)
+* [Functional Description, version 1.0.0-1 for EMI2](https://web2.infn.it/wnodes/images/stories/doc/wnodes-functionaldescription.pdf)
+* [User Guide, version 1.0.0-InProgress for EMI2]
+* [License EUPL](http://joinup.ec.europa.eu/system/files/EN/EUPL%20v.1.1%20-%20Licence.pdf)
+* [Release Notes, version 2.0.3-3 for EMI2](https://web2.infn.it/wnodes/images/stories/doc/releasenotes-wnodes-v2.0.3-3.pdf)
+
+#### The following documents are for WNoDeS version 2.0.2-1:
+* [System Administration Guide, version 1.0.0-3 for EMI2](https://web2.infn.it/wnodes/images/stories/doc/wnodes-sysadminguide_v_1_0_0_3.pdf)
+* [Test Plan, version 1.0.0-2 for EMI2](https://web2.infn.it/wnodes/images/stories/doc/wnodes-testplan_v_1_0_0_2.pdf)
+* [Functional Description, version 1.0.0-1 for EMI2](https://web2.infn.it/wnodes/images/stories/doc/wnodes-functionaldescription.pdf)
+* [License EUPL](http://joinup.ec.europa.eu/system/files/EN/EUPL%20v.1.1%20-%20Licence.pdf)
+* [Release Notes, version 2.0.2-1 for EMI2](https://web2.infn.it/wnodes/images/stories/doc/releasenotes-wnodes-v2.0.2-1.pdf)
+
+#### The following documents are for WNoDeS version 2.0.1-1:
+* [System Administration Guide, version 1.0.0-2 for EMI2](https://web2.infn.it/wnodes/images/stories/doc/wnodes-sysadminguide_v_1_0_0_2.pdf)
+* [Test Plan, version 1.0.0-1 for EMI2](https://web2.infn.it/wnodes/images/stories/doc/wnodes-testplan.pdf)
+* [Functional Description, version 1.0.0-1 for EMI2](https://web2.infn.it/wnodes/images/stories/doc/wnodes-functionaldescription.pdf)
+* [License EUPL](http://joinup.ec.europa.eu/system/files/EN/EUPL%20v.1.1%20-%20Licence.pdf)
+* [Release Notes, version 2.0.1-1 for EMI2](https://web2.infn.it/wnodes/images/stories/doc/releasenotes-wnodes-v2.0.1-1.pdf)
+
+#### The following documents are for WNoDeS version 2.0.0-2:
+* [System Administration Guide, version 1.0.0-1 for EMI2](https://web2.infn.it/wnodes/images/stories/doc/wnodes-sysadminguide.pdf)
+* [Test Plan, version 1.0.0-1 for EMI2](https://web2.infn.it/wnodes/images/stories/doc/wnodes-testplan.pdf)
+* [Functional Description, version 1.0.0-1 for EMI2](https://web2.infn.it/wnodes/images/stories/doc/wnodes-functionaldescription.pdf)
+* [License EUPL](http://joinup.ec.europa.eu/system/files/EN/EUPL%20v.1.1%20-%20Licence.pdf)
+* [Release Notes, version 2.0.0-2 for EMI2](https://web2.infn.it/wnodes/images/stories/doc/releasenotes-wnodes-v2.0.0-2.pdf)
+
+#### This was the WNoDeS released with EMI-2.
+* [Release notes](http://www.eu-emi.eu/emi-2-matterhorn-products/-/asset_publisher/B4Rk/content/wnodes).
+
 
 
 <!--
