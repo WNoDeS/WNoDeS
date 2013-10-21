@@ -22,7 +22,7 @@ The gLite middleware allows submission to the Computing Element (CE) through the
                       other.GlueHostMainMemoryRAMSize > 2000";
 
 To enable the virtual image selection, this attribute must contain the
-GlueHostSoftwareApplicationRuntimeEnvironment string. WNoD uses a naming convention to understand which of the members of this attribute is requesting a virtual image.
+GlueHostSoftwareApplicationRuntimeEnvironment string. WNoDeS uses a naming convention to understand which of the members of this attribute is requesting a virtual image.
 
     CeForwardParameters =  {"GlueHostSoftwareApplicationRuntimeEnvironment"};
     CeRequirements = "(Member(\"vm_etics_slc4\",

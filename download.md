@@ -7,8 +7,6 @@ tag: 'pippo'
 ---
 {% include JB/setup %}
 
-#  WNoDeS releases
-
 WNoDeS packages can be obtained from the EMI repository or from the WNoDeS product team package repository.
 
 ### Repository configuration 
