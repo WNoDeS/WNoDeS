@@ -4,7 +4,7 @@ title: WNoDeS
 base_url: "./"
 ---
 
-During the last years INFN has worked in several European projects with the aim of establising a European Grid Infrastructure to serve scientists. Recently, Cloud Computing has emerged as an alternative pattern to Grid Computing. Though sometimes they are presented to be competitive, we believe that Grid and Cloud Computing serve different use cases and can work together in improving Distributed Computing Infrastructures (DCIs) offered to scientists in Europe.
+During the last years INFN has worked in several European projects with the aim of establishing a European Grid Infrastructure to serve scientists. Recently, Cloud Computing has emerged as an alternative pattern to Grid Computing. Though sometimes they are presented to be competitive, we believe that Grid and Cloud Computing serve different use cases and can work together in improving Distributed Computing Infrastructures (DCIs) offered to scientists in Europe.
 
 These pages collect the work that is being carried on at INFN on the integration between Grid and Cloud services. We are mainly focusing efforts on the following two themes:
 <div class="row-fluid marketing">
@@ -24,7 +24,7 @@ WNoDeS makes possible to run batch jobs on virtual worker nodes, i.e. on computi
 WNoDeS enables the possibility for Grid users to select at job submission time the virtual image that will be loaded on the Worker Node that will execute the job.
 [Read more]({{site.baseurl}}/documentation/grid_integration.html)
 
-#### Grid Resourses through Cloud (IaaS) interfaces
+#### Grid Resources through Cloud (IaaS) interfaces
 WNoDeS enables the creation of virtual worker nodes on demand, which can then be used to run Grid or Cloud services.
 [Read more]({{site.baseurl}}/documentation/grid_resources_through_cloud_interfaces.html)
   </div>
