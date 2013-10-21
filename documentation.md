@@ -16,7 +16,7 @@ The WNoDeS focus is on Everything as a Service, where Everything may be hardware
 
 WNoDeS dynamically provides virtualized and customized computing resources on demand. Virtualized resources can be used to run applications software, interactive analysis, software development, services and so on. In a few words, WNoDeS lets local, Grid and cloud computing converge upon Dynamically Provided Virtualized Resources.
 
-* [Overall architectural framework]({{site.baseurl}}/documentation/grid_integration.html)
+* [Overall architectural framework]({{site.baseurl}}/documentation/architectural_framework.html)
 * [WNoDeS workflow]({{site.baseurl}}/documentation/workflow.html)
 * [WNoDeS Process Flow]({{site.baseurl}}/documentation/process_flow.html)
 * [Virtual Image Selection and Loading]({{site.baseurl}}/documentation/virtual_image.html)
