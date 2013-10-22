@@ -9,23 +9,28 @@ The following is the list of last WNoDeS releases, with the released components 
 
 
 <span class="label" style="margin-top: -20px;">20.10.2013</span> <span class="label label-info" style="margin-top: -20px;">current</span>
-### WNoDeS v.2.2.0
-
-
-
+### WNoDeS v.2.2.3
 
 This is the latest release for WNoDeS, available on WNoDeS repositories.
 
 | Component			   | Version	|
 |:---------------------|:-----------|
-|WNoDeS Bait 		    |[2.2.0]({{site.baseurl}}/location_release/)|
-|WNoDeS Hypervisor	    |[2.2.0]({{site.baseurl}}/location_release/)|
-|WNoDeS Manager 		|[2.2.0]({{site.baseurl}}/location_release/)|
-|WNoDeS	NameServer	    |[2.2.0]({{site.baseurl}}/location_release/)|
-|WNoDeS SiteSpecific    |[2.2.0]({{site.baseurl}}/location_release/)|
-|WNoDeS Utils 			|[2.2.0]({{site.baseurl}}/location_release/)|
+|WNoDeS Bait 		    |[2.2.0]({{site.baseurl}}/release-notes/wnodes_bait/2.2.0/)|
+|WNoDeS Hypervisor	    |[2.2.0]({{site.baseurl}}/release-notes/wnodes_hypervisor/2.2.0/)|
+|WNoDeS Manager 		|[2.2.0]({{site.baseurl}}/release-notes/wnodes_manager/2.2.0/)|
+|WNoDeS	NameServer	    |[2.2.0]({{site.baseurl}}/release-notes/wnodes_nameserver/2.2.0/)|
+|WNoDeS SiteSpecific    |[2.2.0]({{site.baseurl}}/release-notes/wnodes_site_specific/2.2.0/)|
+|WNoDeS Utils 			|[2.2.0]({{site.baseurl}}/release-notes/wnodes_utils/2.2.0/)|
 
 See more details on the [release notes]({{site.baseurl}}/release-notes/WNoDeS-2.2.0.html).
+
+#### Release note of maintenance updates:
+
+[WNoDeS-2.2.1]({{site.baseurl}}/release-notes/WNoDeS-2.2.1.html)
+
+[WNoDeS-2.2.2]({{site.baseurl}}/release-notes/WNoDeS-2.2.2.html)
+
+[WNoDeS-2.2.3]({{site.baseurl}}/release-notes/WNoDeS-2.2.3.html)
 
 ___
 
@@ -34,15 +39,6 @@ ___
 
 
 This was the first update for WNoDeS in EMI-3.
-
-| Component			   | Version	|
-|:---------------------|:-----------|
-|WNoDeS Bait 		    |[2.2.0]({{site.baseurl}}/location_release/)|
-|WNoDeS Hypervisor	    |[2.2.0]({{site.baseurl}}/location_release/)|
-|WNoDeS Manager 		|[2.2.0]({{site.baseurl}}/location_release/)|
-|WNoDeS	NameServer	    |[2.2.0]({{site.baseurl}}/location_release/)|
-|WNoDeS SiteSpecific    |[2.2.0]({{site.baseurl}}/location_release/)|
-|WNoDeS Utils 			|[2.2.0]({{site.baseurl}}/location_release/)|
 See more details on the [release notes]({{site.baseurl}}/release-notes/WNoDeS-2-2.0.html).
 
 
