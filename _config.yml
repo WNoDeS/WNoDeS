@@ -150,49 +150,49 @@ functional_description_version: 2.2.0
 wnodes_components: 
     - name: WNoDeS Bait 
       package: wnodes_bait
-      latest: 2.2.0-1
+      latest: 2.2.0
       new: true
       repo: WNoDeS
       visibility: show
     - name: WNoDeS Hypervisor
       package: wnodes_hypervisor
-      latest: 2.2.0-1
+      latest: 2.2.0
       new: true
       repo: WNoDeS 
       visibility: show
     - name: WNoDeS Manager
       package: wnodes_manager
-      latest: 2.2.0-1
+      latest: 2.2.0
       new: true
       repo: WNoDeS
       visibility: show
     - name: WNoDeS Name Server
       package: wnodes_nameserver
-      latest: 2.2.0-1
+      latest: 2.2.0
       new: true
       repo: WNoDeS
       visibility: show
     - name: WNoDeS Site Specific
       package: wnodes_site_specific
-      latest: 2.2.0-1
+      latest: 2.2.0
       new: true
       repo: WNoDeS
       visibility: show
     - name: WNoDeS utils
       package: wnodes_utils
-      latest: 2.2.0-1
+      latest: 2.2.0
       new: true
       repo: WNoDeS emi
       visibility: show
     - name: WNoDeS Cache Manager
       package: wnodes_cachemanager
-      latest: 2.2.0-1
+      latest: 2.2.0
       new: true
       repo: WNoDeS emi
       visibility: show
     - name: WNoDeS CLI
       package: wnodes_cli
-      latest: 2.2.0-1
+      latest: 2.2.0
       new: true
       repo: WNoDeS emi
       visibility: hide
@@ -210,7 +210,7 @@ wnodes_components:
       visibility: hide
     - name: WNoDeS Documentation
       package: wnodes_documentation
-      latest: 2.2.0-1
+      latest: 2.2.0
       new: true
       repo: WNoDeS
       visibility: hide

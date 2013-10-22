@@ -18,12 +18,12 @@ This is the latest release for WNoDeS, available on WNoDeS repositories.
 
 | Component			   | Version	|
 |:---------------------|:-----------|
-|WNoDeS Bait 		    |[2.2.0-1]({{site.baseurl}}/location_release/)|
-|WNoDeS Hypervisor	    |[2.2.0-1]({{site.baseurl}}/location_release/)|
-|WNoDeS Manager 		|[2.2.0-1]({{site.baseurl}}/location_release/)|
-|WNoDeS	NameServer	    |[2.2.0-1]({{site.baseurl}}/location_release/)|
-|WNoDeS SiteSpecific    |[2.2.0-1]({{site.baseurl}}/location_release/)|
-|WNoDeS Utils 			|[2.2.0-1]({{site.baseurl}}/location_release/)|
+|WNoDeS Bait 		    |[2.2.0]({{site.baseurl}}/location_release/)|
+|WNoDeS Hypervisor	    |[2.2.0]({{site.baseurl}}/location_release/)|
+|WNoDeS Manager 		|[2.2.0]({{site.baseurl}}/location_release/)|
+|WNoDeS	NameServer	    |[2.2.0]({{site.baseurl}}/location_release/)|
+|WNoDeS SiteSpecific    |[2.2.0]({{site.baseurl}}/location_release/)|
+|WNoDeS Utils 			|[2.2.0]({{site.baseurl}}/location_release/)|
 
 See more details on the [release notes]({{site.baseurl}}/release-notes/WNoDeS-2.2.0.html).
 
@@ -35,15 +35,15 @@ ___
 
 This was the first update for WNoDeS in EMI-3.
 
-| Component			    | Version	|
-|:----------------------|:----------|
-|WNoDeS Bait 		    |[version number]({{site.baseurl}}/location_release/)|
-|WNoDeS Hypervisor	    |[version number]({{site.baseurl}}/location_release/)|
-|WNoDeS Manager 		|[version number]({{site.baseurl}}/location_release/)|
-|WNoDeS	NameServer	    |[version number]({{site.baseurl}}/location_release/)|
-|WNoDeS SiteSpecific    |[version number]({{site.baseurl}}/location_release/)|
-|WNoDeS Utils 			|[version number]({{site.baseurl}}/location_release/)|
-See more details on the [release notes]({{site.baseurl}}/release-notes/WNoDeS-version.html).
+| Component			   | Version	|
+|:---------------------|:-----------|
+|WNoDeS Bait 		    |[2.2.0]({{site.baseurl}}/location_release/)|
+|WNoDeS Hypervisor	    |[2.2.0]({{site.baseurl}}/location_release/)|
+|WNoDeS Manager 		|[2.2.0]({{site.baseurl}}/location_release/)|
+|WNoDeS	NameServer	    |[2.2.0]({{site.baseurl}}/location_release/)|
+|WNoDeS SiteSpecific    |[2.2.0]({{site.baseurl}}/location_release/)|
+|WNoDeS Utils 			|[2.2.0]({{site.baseurl}}/location_release/)|
+See more details on the [release notes]({{site.baseurl}}/release-notes/WNoDeS-2-2.0.html).
 
 
 #### [Release Notes, version 3.0.0-1 for EMI3](https://web2.infn.it/wnodes/images/stories/doc/releasenotes-wnodes-v3.0.0-1.pdf)&nbsp;<span class="label label-success">new</span>
