@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Custom Jekyll 404 page -->
+    {% if page.url == "/404.html" %}
+      <meta http-equiv="refresh" content="5; url=/">
+    {% endif %}
+
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
     {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
@@ -35,72 +40,6 @@
 <!--  Wnodes logo moved to footer     
       <a class="logo"><img src="{{ASSET_PATH}}/wnodes_logo.png"/></a>
  -->
-<!-- 
-      <div class="navbar-inner">
-        <div class="container">
-          <ul class="nav">
-            <a class="brand" href="#">w3resource</a>
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li class="dropdown" id="accountmenu">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Tutorials<b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">PHP</a></li>
-              <li><a href="#">MySQL</a></li>
-              <li class="divider"></li>
-              <li><a href="#">JavaScript</a></li>
-              <li><a href="#">HTML5</a></li>
-            </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="container-fluid">
-      <h1>Dropdown Example</h1>
-    </div>
-    <script type="text/javascript" src="js/jquery-latest.js"></script>
-    <script type="text/javascript" src="js/bootstrap.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-      $('.dropdown-toggle').dropdown();
-      });
-    </script>
- -->
-<!-- 
-      <div class="navbar-inner">
-        <div class="container">
-          <ul class="nav">
-            <a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
-            {% assign pages_list = site.pages %}
-            {% assign group = 'navigation' %}
-            {% include JB/pages_list %}
-            <li class="dropdown" id="accountmenu">
-            <a class="dropdown-toggle" data-toggle="dropdown" role="button" data-target="#" href="/documentation.html">
-              Documentation
-              <b class="caret"></b>
-            </a>
-            <ul class="dropdown-menu">
-              <li><a tabindex="-1" href="/documentation/cloud_integration.html">Cluod integration</a></li>
-              <li><a tabindex="-1" href="/documentation/grid_integration.html">Grid integration</a></li>
-              <li class="divider"></li>
-              <li><a tabindex="-1" href="/documentation/faq.html">Faq</a></li>
-              <li><a tabindex="-1" href="/documentation/faq_mixed_mode.html">Faq Mixed Mode</a></li>
-            </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <script type="text/javascript">
-      $(document).ready(function () {
-      $('.dropdown-toggle').dropdown();
-      });
-    </script>
--->
-
        <div class="navbar-inner">
         <div class="container">
           <a class="brand" href="{{ site.baseurl }}">{{ site.title }}</a>
@@ -132,7 +71,7 @@
         {{ content }}
       </div>
       <hr>
-<!--  Footer alternativo
+<!--  Alternative Footer
       <footer>
         <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}
           with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
@@ -140,7 +79,6 @@
         </p>
       </footer>
  -->
-
     </div>
   <!-- Scripts included at the end of the page -->
     <script type="text/javascript" src="{{ site.baseurl }}/assets/js/jquery.js"></script>
