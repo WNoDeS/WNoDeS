@@ -1,7 +1,6 @@
 ---
 layout: default
 title: About us
-group: navigation
 ---
 
 # About us
