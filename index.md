@@ -4,29 +4,29 @@ title: WNoDeS
 base_url: "./"
 ---
 
-During the last years INFN has worked in several European projects with the aim of establishing a European Grid Infrastructure to serve scientists. Recently, Cloud Computing has emerged as an alternative pattern to Grid Computing. Though sometimes they are presented to be competitive, we believe that Grid and Cloud Computing serve different use cases and can work together in improving Distributed Computing Infrastructures (DCIs) offered to scientists in Europe.
+The Worker Nodes on Demand Service (WNoDeS) is an INFN-developed architecture that makes possible to dynamically allocate virtual resources out of a common resource pool.
 
-These pages collect the work that is being carried on at INFN on the integration between Grid and Cloud services. We are mainly focusing efforts on the following two themes:
-<div class="row-fluid marketing">
- <div class="row">
-  <div class="span6">
-#### Cloud Integration
-WNoDeS delivers access to Cloud services through the Open Cloud Computing Interface, implementing a subset of the OCCI API, using X.509 authentication and exposing a REST interface.
-[Read more]({{site.baseurl}}/documentation/cloud_integration.html)
+WNoDeS realizes a Cloud over Grid approach which is quite original in the European Grid Infrastructure (EGI) ecosystem of software products and tools.
 
-#### Dynamic Provisioning of Virtual Worker Nodes
-WNoDeS makes possible to run batch jobs on virtual worker nodes, i.e. on computing resources functionally identical to traditional servers, but running on virtual machines.
-[Read more]({{site.baseurl}}/documentation/vwn_dynamic_provisioning.html)
+Other approaches in the field of Grid and Cloud integration are quite different from the WNoDeS one:
 
-  </div>
-  <div class="span6">
-#### Grid Integration
-WNoDeS enables the possibility for Grid users to select at job submission time the virtual image that will be loaded on the Worker Node that will execute the job.
-[Read more]({{site.baseurl}}/documentation/grid_integration.html)
+* Grid of Clouds - which is the approach being pursued by the EGI project with a dedicated work package.
+It has the objective of creating a federation of various Cloud sites, running different software stacks, which need to interoperate publishing resource discovery information and accounting/monitoring data to the central EGI services.
+Solutions for a central images marketplace, for an unified Authentication and Authorization and for a cloud brokering system are also under investigation.
+* Grid over Cloud - which implies the creation of Grid sites on top of a Cloud infrastructure though landscape deployment of virtual resources.
+The provided Grid infrastructure can exploit the dynamic nature of the Clouds, provisioning resources according to the real needs of the users.
 
-#### Grid Resources through Cloud (IaaS) interfaces
-WNoDeS enables the creation of virtual worker nodes on demand, which can then be used to run Grid or Cloud services.
-[Read more]({{site.baseurl}}/documentation/grid_resources_through_cloud_interfaces.html)
-  </div>
- </div>
-</div>
+The WNoDeS focus is on Everything as a Service, where Everything may be hardware, software, data, platform, infrastructure.
+
+WNoDeS dynamically provides virtualized and customized computing resources on demand.
+Virtualized resources can be used to run applications software, interactive analysis, software development, services.
+It allows to integrate the Grid and Cloud paradigms exploiting the same physical resources.
+
+It is built around a tight integration with a LRMS (a "batch system") and is running in production at the INFN Tier-1 Computing Center. Its main characteristics are:
+
+* Full integration with existing computing resource scheduling, policing, monitoring and accounting workflow.
+* On-demand virtual resource provisioning and VLAN support to dynamically isolate Virtual Machines depending on service type / customer requests.
+* Support for users to select and access WNoDeS-based resources through Grid, Cloud interfaces, or also through direct job submissions.
+
+
+WNoDeS lets local, Grid and cloud computing converge upon Dynamically Provided Virtualized Resources.
