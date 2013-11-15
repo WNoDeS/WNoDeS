@@ -3,8 +3,7 @@ layout: page
 title: WNoDeS
 base_url: "./"
 ---
-
-The Worker Nodes on Demand Service (WNoDeS) is an INFN-developed architecture that makes possible to dynamically allocate virtual resources out of a common resource pool.
+The Worker Nodes on Demand Service (WNoDeS) is an INFN-developed architecture that makes possible to dynamically allocate virtual resources customized accordingly out of a common resource pool.
 
 WNoDeS realizes a Cloud over Grid approach which is quite original in the European Grid Infrastructure (EGI) ecosystem of software products and tools.
 
@@ -16,12 +15,7 @@ Solutions for a central images marketplace, for an unified Authentication and Au
 * Grid over Cloud - which implies the creation of Grid sites on top of a Cloud infrastructure though landscape deployment of virtual resources.
 The provided Grid infrastructure can exploit the dynamic nature of the Clouds, provisioning resources according to the real needs of the users.
 
-The WNoDeS focus is on Everything as a Service, where Everything may be hardware, software, data, platform, infrastructure.
-
-WNoDeS dynamically provides virtualized and customized computing resources on demand.
-Virtualized resources can be used to run applications software, interactive analysis, software development, services.
-It allows to integrate the Grid and Cloud paradigms exploiting the same physical resources.
-
+WNoDeS integrates the Grid and Cloud paradigms exploiting the same physical resources.
 It is built around a tight integration with a LRMS (a "batch system") and is running in production at the INFN Tier-1 Computing Center. Its main characteristics are:
 
 * Full integration with existing computing resource scheduling, policing, monitoring and accounting workflow.
