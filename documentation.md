@@ -36,20 +36,21 @@ Details about the selection and loading of a virtual image
 </div>
 <div class="span6">
 
-#### Monitoring and Logging
-[Read more]({{site.baseurl}}/documentation/monitoring_logging.html)
+#### Supported Requests
+Users' requests supported with WNoDeS  
+[Read more]({{site.baseurl}}/documentation/supported_requests.html)
 
-#### Deployment Experience
-Details about O.S. used in INFN Tier-1 deployment
-[Read more]({{site.baseurl}}/documentation/deployment_experience.html)
+#### Use Experience
+Details about how Auger and WeNMR provided grid and cloud services over WNoDeS 
+[Read more]({{site.baseurl}}/documentation/use_experience.html)
 
 #### Current Status
 Details about the deployment of WNoDeS on the INFN Tier-1 production infrastructure
 [Read more]({{site.baseurl}}/documentation/current_status.html)
 
-#### New Features
-Latest features implemented in the framework
-[Read more]({{site.baseurl}}/documentation/new_features.html)
+#### Proof of concepts 
+Proof of concepts implemented in the framework
+[Read more]({{site.baseurl}}/documentation/proof_of_concepts.html)
 
 </div>
 </div>
