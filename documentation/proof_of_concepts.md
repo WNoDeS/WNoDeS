@@ -14,7 +14,7 @@ description: ""
 <div class="row">
 <div class="span3">
 
-#### DVN
+#### [DVN] (http://www.computer.org/csdl/proceedings/sccompanion/2012/4956/00/4956a526-abs.html)
 
 </div>
 <div class="span9">
@@ -23,9 +23,9 @@ In fact, virtualized deployment environments impose requirements on networking f
 For example, hundreds of users issuing cloud requests for which full access (i.e., including root privileges) to VMs are requested, typically require the definition of network separation at layer through the use of virtual LANs.
 However, in large computing centers, due for example to the number of installed network switches, to their characteristics, or to their heterogeneity, the dynamic (or even static) definition of many VLANs is often impractical or simply not possible.
 
-WNoDeS DVN is solution to the problem of dynamic virtual networking based on the use of the Generic Routing Encapsulation Protocol.
+WNoDeS DVN is a solution to the problem of dynamic virtual networking based on the use of the Generic Routing Encapsulation Protocol.
 GRE is used to encapsulate VM traffic so that the configuration of the physical network switches doesn't have to change.
-In particular, we describe how this solution can be used to tackle problems such as dynamic network isolation and mobility of VMs across hosts.
+This solution can be used to tackle problems such as dynamic network isolation and mobility of VMs across hosts.
 
 * Reduce the network broadcast domain.
 * Grant different network access polices to every virtual machine.
@@ -36,12 +36,12 @@ VLANs provide network isolation, particularly requested for cloud computing, whe
 <div class="row">
 <div class="span3">
 
-#### VIP
+#### [VIP] (http://web2.infn.it/wnodes/download/CHEP10-Grandi-VIP-101019.pdf)
 
 </div>
 <div class="span9">
 
-[WNoDeS Virtual Interactive Pool] (http://web2.infn.it/wnodes/download/CHEP10-Grandi-VIP-101019.pdf) is an on-demand provisioning of virtual user interfaces for local users out of a common resource pool.
+WNoDeS Virtual Interactive Pool is an on-demand provisioning of virtual user interfaces for local users out of a common resource pool.
 Based on a CLI, it can be easily used by computing centre users seeking for additional, unused resources.
 Provides customized computing resources for interactive usage like, for example, software development or physics analysis.
 The provisioned virtual resource matches user requirements for RAM, CPU, bandwidth and shared file systems to be mounted.
