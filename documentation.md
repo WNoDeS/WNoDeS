@@ -5,7 +5,7 @@ title: "Documentation"
 ---
 WNoDeS provides a Grid/Cloud integrated access to a set of shared computing resources, whose use is therefore optimized for different kinds of users with different requirements.
 
-In the following we describe the WnoDeS framework, the main features, and usersâ€™ support. We also show the experiences done with scientific applications at INFN Tier-1. 
+In the following we describe the WNoDeS framework, its main features and some details of its workflow. We also explain the supported users' requests  and show the experiences matured with scientific applications at INFN Tier-1, with scientific partners and finally the proof of concepts we are working on.
 
 <div class="row-fluid marketing">
 
@@ -18,11 +18,11 @@ In the following we describe the WnoDeS framework, the main features, and usersâ
 <div class="row">
 <div class="span6">
 #### Architectural Framework
-Overall architectural view of the WNoDeS framework
+Architectural Overview of the WNoDeS framework
 [Read more]({{site.baseurl}}/documentation/architectural_framework.html)
 
 #### Workflow
-Workflow of batch real and virtual jobs
+Workflow of the batch, real and virtual jobs
 [Read more]({{site.baseurl}}/documentation/workflow.html)
 
 #### Significant Features
