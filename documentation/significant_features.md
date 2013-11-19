@@ -6,9 +6,14 @@ description: ""
 ---
 {% include JB/setup %}
 
+### VLAN support
 
+Different virtual machines running on the same hypervisor can belong to different VLAN.
 
-### Mixed Mode Feature
+* Reduce the network broadcast domain.
+* Grant different network access polices to every virtual machine. VLANs provide network isolation, particularly requested for cloud computing, where users get root access to virtual machine. 
+
+### Mixed Mode
 
 The Mixed Mode [1] is one of the main functionalities of WNoDeS.
 It was introduced to make it able to handle physical computing resources both as traditional member nodes of a batch system to execute jobs and as hypervisor node to instantiate virtual machines.
@@ -33,15 +38,7 @@ The cloud job will be always executed on the virtual machine.
 ![WNoDeS Framework]({{site.baseurl}}/images/mixed_mode_on_new.png )
 
 
-### VLAN support
-
-Different virtual machines running on the same hypervisor can belong to different VLAN.
-
-* Reduce the network broadcast domain.
-* Grant different network access polices to every virtual machine. VLANs provide network isolation, particularly requested for cloud computing, where users get root access to virtual machine. 
-
-
-
+**References**
 
 [1] Salomoni D., Italiano A. and Ronchieri E. WNoDeS, a Tool for Integrated Grid and Cloud Access and Computing Farm Virtualization, 
 Journal of Physics: Conference Series Volume 331 Part 5: Computing Fabrics and Networking Technologies. 331, 2011
