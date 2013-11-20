@@ -12,7 +12,7 @@ Other approaches in the field of Grid and Cloud integration are quite different 
 
 * Grid of Clouds: which is the approach being pursued by the EGI project with a dedicated work package.
 It has the objective of creating a federation of various Cloud sites, running different software stacks, which need to interoperate publishing resource discovery information and accounting/monitoring data to the central EGI services.
-Solutions for a central images marketplace, for an unified Authentication and Authorization and for a cloud brokering system are also under investigation.
+Solutions for a central images marketplace, for a unified Authentication and Authorization and for a cloud brokering system are also under investigation.
 
 * Grid over Cloud: which implies the creation of Grid sites on top of a Cloud infrastructure though landscape deployment of virtual resources.
 The provided Grid infrastructure can exploit the dynamic nature of the Clouds, provisioning resources according to the real needs of the users.
@@ -41,7 +41,7 @@ The whole logic can be explained by using a bottom up approach.
 At the lowest level, the Virtual Resources Layer, there is the site-specific component, which is designed to be run on the virtual machine itself to make it able to interact with the rest of the WNoDeS system.
 
 At the Business Logic Layer level there are the bait, hypervisor and site-specific components.
-The bait is the WNoDeS interface to the batch system, and its duty is to translate requests for job execution into requests for virtual machine creation and then move the actual job to the newly created virtual machine, and does this with the help of another instance of the site-specific component, which redirects batch system requests to the bait itself.
+The bait is the WNoDeS interface to the batch system, its duty is to translate requests for job execution into requests for virtual machine creation and then move the actual job to the newly created virtual machine, and does this with the help of another instance of the site-specific component, which redirects batch system requests to the bait itself.
 The hypervisor is the component that actually deals with the low-level detail of the virtual machine management (such as creation, configuration, and destruction) and works on top of an existing virtualization technology that is the Linux KVM.
 The site-specific is the component that allows the site administrator to personalize users’ requests by considering the image characteristics.
 
