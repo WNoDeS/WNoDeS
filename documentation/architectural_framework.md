@@ -57,9 +57,9 @@ The cloud component receives users’ requests and sends them to the Cachemanage
 The cachemanager component handles the provisioning of virtual machines.
 
 Finally, there is the Access Layer, which provides a cloud CLI component that can send commands to the Cloud Layer through the OCCI interface.
-The same component is used by the IGI portal [4] to provide cloud resources via a Web interface.
+The same component is used by the [IGI portal] (https://portal.italiangrid.it/) to provide cloud resources via a Web interface.
 At this level it is also available a CLI to submit grid or local requests.
-For what concerns the authentication and authorization, in case of cloud or grid requests the user needs to belong to a virtual organization [5] and have a valid X.509 certificate [6], whilst in case of batch requests the user needs to belong to the pool of users that is authorized to submit jobs by the batch system.
+For what concerns the authentication and authorization, in case of cloud or grid requests the user needs to belong to a virtual organization [4] and have a valid X.509 certificate [5], whilst in case of batch requests the user needs to belong to the pool of users that is authorized to submit jobs by the batch system.
 There are two common flows throughout this architecture:
 
 1. Grid/Batch access: through jobs sent by the batch system to a WNoDeS-controlled farm or sub-farm;
@@ -81,8 +81,6 @@ The virtual machine is then destroyed when the sleep job ends or when the user e
 
 [3] Tusa F., Paone M., Villari M., and Puliafito A. CLEVER: A Cloud Cross-Computing Platform Leveraging GRID Resources. Proceedings of the IEEE Internatonal Conference on Utility and Cloud Computing, 390-396, IEEE Computer Society, 2011.
 
-[4] 
+[4] Foster,I., Kesselman,C. and Tuecke,S. The Anatomy of the Grid: Enabling Scalable Virtual Organizations. International Journal of High Performance Computing Applications, 15, 200-222, 2001.
 
-[5] Foster,I., Kesselman,C. and Tuecke,S. The Anatomy of the Grid: Enabling Scalable Virtual Organizations. International Journal of High Performance Computing Applications, 15, 200-222, 2001.
-
-[6] Housley, R., Polk, W., Ford, W., and Solo, D. In- ternet X.509 Public Key Infrastructure, Certificate and Certificate Revocation List (CRL) Profile, 2002. [http://www.ietf.org/rfc/rfc3280.txt] (http://www.ietf.org/rfc/rfc3280.txt)
+[5] Housley, R., Polk, W., Ford, W., and Solo, D. In- ternet X.509 Public Key Infrastructure, Certificate and Certificate Revocation List (CRL) Profile, 2002. [http://www.ietf.org/rfc/rfc3280.txt] (http://www.ietf.org/rfc/rfc3280.txt)
