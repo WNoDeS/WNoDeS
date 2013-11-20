@@ -12,7 +12,7 @@ The INFN Tier-1 computing centre (CNAF, Bologna) manages a WNoDeS production ins
 It works in a fully integrated fashion with the overall number of 13 thousand cores of the farm, all belonging to a single LSF cluster.
 At the time of this writing, almost one thousand VMs can currently be instantiated on-demand out of this common farm to support cloud computing, or custom executing environments.
 
-Accessing Scientific Applications through the WNoDeS Cloud Virtualization Framework Marco Verlato [1] At INFN Tier-1 a certain number of Virtual Organizations (VOs) have been configured to use WNoDeS during the computation of their jobs.
+Accessing Scientific Applications through the WNoDeS Cloud Virtualization Framework Marco Verlato[1]. At INFN Tier-1 a certain number of Virtual Organizations (VOs) have been configured to use WNoDeS during the computation of their jobs.
 Furthermore, the site adopts mixed mode in order to use physical resources both as traditional batch nodes and, at the same time, as HVs for VM instantiation.
 This lets sites to introduce features like the support of VM and cloud computing on traditional resources without disrupting existing services and allowing to efficiently deciding which workloads are to be virtualized and which should be run instead on top of non-virtual hardware.
 
@@ -66,14 +66,15 @@ After booting, each VirtualCING automatically starts a process getting the job p
 The tokens, previously uploaded on the ToPoS server by the user, contain the information about the proteins to be processed, the URL of the input data to be fetched from the NRG-CING Protein DB, the location of the NMR_REDO Protein DB where to upload the final output data (both DBs are represented by the pink box in Figure 3), and a set of parameters as arguments of the executable.
 At the end of the computation the token is deleted from the ToPoS server and the VirtualCING process asks for another unlocked token, until all tokens have been processed and nothing is left on the ToPoS server. The final results, for each recalculated protein, can be then visualized through the web interface of the [NMR_REDO Protein DB](https://nmr.le.ac.uk).
 
-** Refenceses **
+**References**
 
-[1]
-[2] Pierre Auger Observatory project [http://www.auger.org](http://www.auger.org).
-[3] S. Dal Pra, ["Job Packing: optimized configuration for job scheduling"](http://indico.cern.ch/getFile.py/access?contribId=9&sessionId=5&resId=0&materialId=slides&confId=220443), presentation at HEPIX 2013, 15-19 April 2013, Bologna, Italy.
-[4] Wassenaar et al. (2012), 'WeNMR: Structural Biology on the Grid', J. Grid. Comp., 10:743-767
-[5] Doreleijers, J. F. et al., 'CING: an integrated residue-based structure validation program suite', Journal of biomolecular NMR (2012). doi:10.1007/s10858-012-9669-7.
-[6] Doreleijers, J. F. et al., 'NRG-CING: integrated validation reports of remediated experimental biomolecular NMR data and coordinates in wwPDB', Nucleic acids research 40, D519Ð24 (2012).
-[7] Nabuurs, S. B. et al., 'DRESS: a database of refined solution NMR structures', Proteins 55, 483Ð6 (2004).
-[8] Nederveen, A. J. et al., 'RECOORD: a recalculated coordinate database of 500+ proteins from the PDB using restraints from the BioMagResBank', Proteins 59, 662Ð72 (2005).
-[9] Berman, H., Henrick, K., Nakamura, H. & Markley, J. L., 'The worldwide Protein Data Bank (wwPDB): ensuring a single, uniform archive of PDB data', Nucleic acids research 35, D301Ð3 (2007).
+[1] Incomplete
+
+[2] Pierre Auger Observatory project [http://www.auger.org] (http://www.auger.org).
+
+[3] S. Dal Pra, ["Job Packing: optimized configuration for job scheduling"] (http://indico.cern.ch/getFile.py/access?contribId=9&sessionId=5&resId=0&materialId=slides&confId=220443), presentation at HEPIX 2013, 15-19 April 2013, Bologna, Italy.
+
+[4] Wassenaar et al. (2012), "WeNMR: Structural Biology on the Grid", J. Grid. Comp., 10:743-767
+
+[5] Doreleijers, J. F. et al., "CING: an integrated residue-based structure validation program suite", Journal of biomolecular NMR (2012). doi:10.1007/s10858-012-9669-7.
+
