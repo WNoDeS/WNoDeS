@@ -9,7 +9,7 @@ description: ""
 ### VLAN support
 
 WNoDeS provides the support to the use of VLANs, therefore Virtual machines running on the same hypervisor can belong to heterogeneous VLANs.
-Main advantages:
+Main advantages are:
 
 * Minimize the network broadcast domain.
 * Grant different network access polices to every virtual machine.
@@ -30,15 +30,15 @@ These can be traditional batch jobs requests, submitted locally or via grid: in 
 These can be also cloud provisioning requests, submitted via the Cloud CLI or the IGI portal: in this case the provisioning will only be furnished by a virtual machine.
 WNoDeS translates these users' requests into jobs that are handled by the batch system.
 
-This Mixed mode has been available since WNoDeS 2.0.0-2 in the EMI-2 Matterhorn distribution [2] whilst the Cloud CLI that interacts with the WNoDeS cloud platform has been released since the version WNoDeS 2.2.0-1 in the EMI-3 Monte Bianco distribution [2].
+This Mixed mode has been available since WNoDeS 2.0.0-2 in the EMI-2 Matterhorn distribution [2] whilst the Cloud CLI that interacts with the WNoDeS cloud platform has been released since the version WNoDeS 3.0.0-1 the EMI-3 Monte Bianco distribution [2].
 
-Figure shows how the mixed mode turned on works: the job in queue to the batch system is sent to the bait service that verifies the state of the virtual machines contacting the hypervisor service.
+Figure 1 shows how the mixed mode turned on works: the job in queue to the batch system is sent to the bait service that verifies the state of the virtual machines contacting the hypervisor service.
 In relation to the type of job and the site-specific configuration, the batch job will be executed on either virtual machine or physical one.
 The cloud job will be always executed on the virtual machine.
 
 
 ![WNoDeS Framework]({{site.baseurl}}/images/mixed_mode_on_new.png )
-
+_Figure 1 - Mixed mode turned on_
 
 **References**
 

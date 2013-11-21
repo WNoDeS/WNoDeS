@@ -3,9 +3,9 @@ layout: page
 title: "Documentation"
 -description: ""
 ---
-WNoDeS provides a Grid/Cloud integrated access to a set of shared computing resources, whose use is therefore optimized for different kinds of users with different requirements.
-
-In the following we describe the WNoDeS framework, its main features and some details of its workflow. We also explain the supported users' requests  and show the experiences matured with scientific applications at INFN Tier-1, with scientific partners and finally the proof of concepts we are working on.
+WNoDeS provides a Grid/Cloud integrated access to a set of shared computing resources, the use of which is therefore optimized for different kinds of users with different requirements.
+In the following we describe the WNoDeS framework, its main features, details of its workflow and the users' supported requests.
+We also show the experiences matured with scientific applications, the current status and finally the proof of concepts we are working on.
 
 <div class="row-fluid marketing">
 
