@@ -55,9 +55,9 @@ The import of one NMR structure into the database and the creation of a CING val
 The experimental and computational procedures involved in the determination of biomolecular structures by NMR are continuously being developed and improved, and have become more advanced over the past 25 years.
 Therefore, by applying today's improved technology to the original data, better structures can be calculated [7, 8].
 Recently, we extended VirtualCING with routines for the recalculation of NMR ensembles using the experimental data in the NRG-CING repository, allowing us to extend our previous recalculation projects and re-determine NMR structures in the Protein Databank (PDB) [9] in the cloud on a large scale.
-The NMR_REDO project aims to improve quality of NMR-derived protein structure ensembles in terms of fit with the original experimental data and geometric quality.
+The NMR\_REDO project aims to improve quality of NMR-derived protein structure ensembles in terms of fit with the original experimental data and geometric quality.
 To date, 3,400 structures have been recalculated and we expect this number to increase to 5,000 of the 10,000 structures deposited in the PDB when our protocol can handle all usable deposited experimental data.
-A full NMR_REDO iteration currently consumes about 25,000 core hours.
+A full NMR\_REDO iteration currently consumes about 25,000 core hours.
 Preliminary results indicate that the recomputed ensembles generally show a better fit to the original data and to independent validation criteria than the original ensembles.
 
 ![Architecture of the WNoDeS-based cloud infrastructure for the WeNMR/VirtualCING use case]({{site.baseurl}}/images/architecture_wenmr_virtualcing.jpg  )
@@ -67,8 +67,8 @@ Figure: Architecture of the WNoDeS-based cloud infrastructure for the WeNMR/Virt
 In order to verify how the WNoDeS cloud framework can enable scientists to perform NMR computations, a customized VirtualCING image has been deployed in the WNoDeS marketplace.
 The WeNMR user, after having created his own VOMS proxy certificate, instantiates a number of VirtualCING machines through the WNoDeS CLI.
 After booting, each VirtualCING automatically starts a process getting the job payload from the [ToPoS] (https://grid.sara.nl/wiki/index.php/Using_the_Grid/ToPoS) token pool server, a pilot job framework offered through a HTTP server hosted by SURFsara organization, in The Netherlands.
-The tokens, previously uploaded on the ToPoS server by the user, contain the information about the proteins to be processed, the URL of the input data to be fetched from the NRG-CING Protein DB, the location of the NMR_REDO Protein DB where to upload the final output data (both DBs are represented by the pink box in Figure), and a set of parameters as arguments of the executable.
-At the end of the computation the token is deleted from the ToPoS server and the VirtualCING process asks for another unlocked token, until all tokens have been processed and nothing is left on the ToPoS server. The final results, for each recalculated protein, can be then visualized through the web interface of the [NMR_REDO Protein DB](https://nmr.le.ac.uk).
+The tokens, previously uploaded on the ToPoS server by the user, contain the information about the proteins to be processed, the URL of the input data to be fetched from the NRG-CING Protein DB, the location of the NMR\_REDO Protein DB where to upload the final output data (both DBs are represented by the pink box in Figure), and a set of parameters as arguments of the executable.
+At the end of the computation the token is deleted from the ToPoS server and the VirtualCING process asks for another unlocked token, until all tokens have been processed and nothing is left on the ToPoS server. The final results, for each recalculated protein, can be then visualized through the web interface of the [NMR\_REDO Protein DB](https://nmr.le.ac.uk).
 
 **References**
 
