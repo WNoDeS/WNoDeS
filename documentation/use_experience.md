@@ -13,12 +13,12 @@ It works in a fully integrated fashion with the overall number of 13 thousand co
 At the time of this writing, almost one thousand VMs can concurrently be instantiated on-demand out of this common farm to support cloud computing, or custom executing environments.
 
 At INFN Tier-1 a certain number of Virtual Organizations (VOs) have been configured to use WNoDeS during the computation of their jobs.
-Furthermore, the site adopts mixed mode in order to use physical resources both as traditional batch nodes and, at the same time, as HVs for VM instantiation.
+VOs supported at INFN Tier-1 computing centre using WNoDeS are alice, ams, biomed, cms, lhcb, pamela and of course auger_db, enmr.eu. In the [FedCloud](https://wiki.egi.eu/wiki/Fedcloud-tf:FederatedCloudsTaskForce) context the WNoDeS deployment also supports: dteam, fedcloud, gridit, ops, testers.eu-emi.
+Furthermore, the site adopts mixed mode to use physical resources both as traditional batch nodes and, at the same time, as HVs for VM instantiation.
 This lets sites to introduce features like the support of VM and cloud computing on traditional resources without disrupting existing services and allowing to efficiently deciding which workloads are to be virtualized and which should be run instead on top of non-virtual hardware.
 
 With the mixed mode turned on, any node of a farm may act as a traditional, "real" node (that only runs traditional batch jobs), as a pure hypervisor (that only runs VMs), or as a node able of running, at the same time, both jobs on the physical hardware (without thus incurring penalties typical of virtual infrastructures), and jobs or cloud services on VMs (thus exploiting capabilities offered by virtual environments).
 Therefore, mixed mode greatly enhances the flexibility of the configuration of a farm and lets system administrators progressively integrated WNoDeS into existing data centres.
-
 
 
 ### Astro-Particle Physics Community
@@ -28,7 +28,9 @@ Scientists involved in the Pierre Auger Observatory deal with so far unknown sou
 When these particles strike the earth's atmosphere, they produce extensive air showers made of billions of secondary particles.
 While much progress has been made in nearly a century of research in understanding cosmic rays with low to moderate energies, those with extremely high energies remain mysterious.
 These rays have energy many times greater than what we can achieve in our largest particle accelerators.
-The scientists measure showers of particles caused by cosmic rays using detectors deployed across three thousand square kilometers of the Pampas of Argentina: they require massive computational power for simulation in order to compare readings with theoretical models.
+The scientists measure showers of particles caused by cosmic rays using detectors deployed across three thousand square kilometers of the Pampas of Argentina: 
+they require massive computational power for simulation to compare readings with theoretical models.
+
 The Auger's computational model requires concurrent read only access to a condition data base (MySQL) from hundreds of computing nodes in the farm.
 The data base resides in a networked filesystem (IBM/GPFS) and may be concurrently accessed by one or more MySQL engines.
 This of course is only possible in the case of read only access.
@@ -43,15 +45,17 @@ This is done to have the Auger's "virtual" jobs being concentrated on the smalle
 
 ### Life Science with WeNMR Virtual Research Community
 WeNMR [3] is both a EU FP7 funded project and a Virtual Research Community (VRC) supporting the Nuclear Magnetic Resonance (NMR) and Small Angle X-ray Scattering (SAXS) structural biology user community.
-It currently operates the largest Virtual Organisation (VO) in life science domain of the European Grid Infrastructure (EGI), with more than 500 registered users worldwide.
+It currently operates the largest VO in life science domain of the European Grid Infrastructure (EGI), with more than 500 registered users worldwide.
+
 While mainly offering application portals providing 'protocolized' access to EGI grid, one of their use-case better fits with the cloud model.
-The Common Interface for NMR Structure Generation (CING [4]) is a software suite designed for the residue-based validation of biomolecular three-dimensional structures determined by NMR.
+The Common Interface for NMR Structure Generation (CING [4]) is a software suite designed for the residue-based validation of bio-molecular three-dimensional structures determined by NMR.
 The CING framework integrates about 20 different external programs and additionally uses internal routines to validate NMR-derived structure ensembles against empirical data and measured chemical shifts, distance and dihedral restraints.
 Due to the high number of external dependencies CING cannot easily be installed on traditional grid computing nodes.
 In contrast, the collection of programs could easily be packaged into a virtual machine that we called "VirtualCING".
 Therefore, VirtualCING is very suited to be used in a cloud environment.
-For example, it has been and still is successfully applied to establish the NRG-CING database, an annotated and remediated repository of experimental, structural, and validation data [5].
-The import of one NMR structure into the database and the creation of a CING validation report on average require 20 min on a single core, taking about 3,300 core hours to process the current set of entries.
+For example, it has been and still is successfully applied to establish the NRG-CING database, an annotated and re-mediated repository of experimental, structural, and validation data [5].
+The import of one NMR structure into the database and the creation of a CING validation report on average require 20 minutes on a single core, taking about 3,300 core hours to process the current set of entries.
+
 The experimental and computational procedures involved in the determination of biomolecular structures by NMR are continuously being developed and improved, and have become more advanced over the past 25 years.
 Therefore, by applying today's improved technology to the original data, better structures can be calculated [6,7].
 Recently, we extended VirtualCING with routines for the recalculation of NMR ensembles using the experimental data in the NRG-CING repository, allowing us to extend our previous recalculation projects and re-determine NMR structures in the Protein Databank (PDB) [8] in the cloud on a large scale.
@@ -64,10 +68,14 @@ Preliminary results indicate that the recomputed ensembles generally show a bett
 
 _Figure 1: Architecture of the WNoDeS-based cloud infrastructure for the WeNMR/VirtualCING use case._
 
-In order to verify how the WNoDeS cloud framework can enable scientists to perform NMR computations, a customized VirtualCING image has been deployed in the WNoDeS marketplace.
+To verify how the WNoDeS cloud framework can enable scientists to perform NMR computations, a customised VirtualCING image has been deployed in the WNoDeS marketplace.
 The WeNMR user, after having created his own VOMS proxy certificate, instantiates a number of VirtualCING machines through the WNoDeS CLI.
 After booting, each VirtualCING automatically starts a process getting the job payload from the [ToPoS] (https://grid.sara.nl/wiki/index.php/Using_the_Grid/ToPoS) token pool server, a pilot job framework offered through a HTTP server hosted by SURFsara organization, in The Netherlands.
-The tokens, previously uploaded on the ToPoS server by the user, contain the information about the proteins to be processed, the URL of the input data to be fetched from the NRG-CING Protein DB, the location of the NMR\_REDO Protein DB where to upload the final output data (both DBs are represented by the pink box in Figure 1), and a set of parameters as arguments of the executable.
+The tokens, previously uploaded on the ToPoS server by the user, contain:
+the information about the proteins to be processed,
+the URL of the input data to be fetched from the NRG-CING Protein DB, 
+the location of the NMR\_REDO Protein DB where to upload the final output data (both DBs are represented by the pink box in Figure 1), 
+and a set of parameters as arguments of the executable.
 At the end of the computation the token is deleted from the ToPoS server and the VirtualCING process asks for another unlocked token, until all tokens have been processed and nothing is left on the ToPoS server. The final results, for each recalculated protein, can be then visualized through the web interface of the [NMR\_REDO Protein DB](https://nmr.le.ac.uk).
 
 **References**
