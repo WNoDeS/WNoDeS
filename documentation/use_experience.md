@@ -68,13 +68,20 @@ At the end of the computation the token is deleted from the ToPoS server and the
 
 **References**
 
-[1] Incomplete
+[1] Verlato M., Ronchieri E, "Accessing Scientific Applications through the WNoDeS Cloud Virtualization Framework", The International Symposium on Grids and Clouds (2013)
 
 [2] Pierre Auger Observatory project [http://www.auger.org] (http://www.auger.org).
 
-[3] S. Dal Pra, ["Job Packing: optimized configuration for job scheduling"] (http://indico.cern.ch/getFile.py/access?contribId=9&sessionId=5&resId=0&materialId=slides&confId=220443), presentation at HEPIX 2013, 15-19 April 2013, Bologna, Italy.
+[3] Dal Pra S., ["Job Packing: optimized configuration for job scheduling"] (http://indico.cern.ch/getFile.py/access?contribId=9&sessionId=5&resId=0&materialId=slides&confId=220443), presentation at HEPIX 2013, 15-19 April 2013, Bologna, Italy.
 
 [4] Wassenaar et al. (2012), "WeNMR: Structural Biology on the Grid", J. Grid. Comp., 10:743-767
 
 [5] Doreleijers, J. F. et al., "CING: an integrated residue-based structure validation program suite", Journal of biomolecular NMR (2012). doi:10.1007/s10858-012-9669-7.
 
+[6] Doreleijers, J. F. et al., "NRG-CING: integrated validation reports of remediated experimental biomolecular NMR data and coordinates in (wwPDB)", Nucleic acids research 40, D519-24 (2012).
+
+[7] Nabuurs, S. B. et al., "DRESS: a database of refined solution NMR structures", Proteins 55, 483-6 (2004).
+
+[8] Nederveen, A. J. et al., "RECOORD: a recalculated coordinate database of 500+ proteins from the PDB using restraints from the BioMagResBank", Proteins 59, 662-72 (2005).
+
+[9] Berman, H., Henrick, K., Nakamura, H. & Markley, J. L., "The worldwide Protein Data Bank wwPDB: ensuring a single, uniform archive of PDB data", Nucleic acids research 35, D301-3 (2007).
