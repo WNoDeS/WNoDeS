@@ -13,8 +13,8 @@ The HyperVisor (HV) instantiates the Virtual Machines (VM) using the requested v
 
 ### WNoDeS process flow for batch
 
--![How WNoDeS works](https://web2.infn.it/wnodes/images/stories/WNoD/wnod_high_level.png) 
--Figure 1 - How WNoDeS works.
+![How WNoDeS works](https://web2.infn.it/wnodes/images/stories/WNoD/wnod_high_level.png) 
+_Figure 1 - How WNoDeS works._
 
 The process flow for a batch job that needs to be dispatched from the Batch System to a computing resource is described in Figure 2.
 A job is received by the Batch System, through whatever method is supposed (e.g., local or Grid job submission). At this point the following steps are followed:
@@ -29,4 +29,4 @@ A job is received by the Batch System, through whatever method is supposed (e.g.
 8. wnodes\_bait on the bait closes the VWN and goes back to waiting for a new job.
 
 ![ The WNoDeS process flow.](https://web2.infn.it/wnodes/images/stories/WNoD/wnod_process_flow.png) 
-Figure 2 - The WNoDeS process flow.
+_Figure 2 - The WNoDeS process flow._
