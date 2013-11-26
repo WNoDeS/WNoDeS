@@ -198,18 +198,18 @@ wnodes_components:
       new: true
       repo: WNoDeS emi
       visibility: hide
-    - name: WNoDeS Dvn
-      package: wnodes_dvn
-      latest: 2.0.0
-      new: false
-      repo: WNoDeS emi
-      visibility: hide
-    - name: WNoDeS Vip
-      package: wnodes_vip
-      latest: 2.0.0
-      new: false 
-      repo: WNoDeS
-      visibility: hide
+#    - name: WNoDeS Dvn
+#      package: wnodes_dvn
+#      latest: 2.0.0
+#      new: false
+#      repo: WNoDeS emi
+#      visibility: hide
+#    - name: WNoDeS Vip
+#      package: wnodes_vip
+#      latest: 2.0.0
+#      new: false 
+#      repo: WNoDeS
+#      visibility: hide
     - name: WNoDeS Documentation
       package: wnodes_documentation
       latest: 2.2.0
