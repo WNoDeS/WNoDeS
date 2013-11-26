@@ -21,6 +21,8 @@ This solution can be used to tackle problems such as dynamic network isolation a
 
 VLANs provide network isolation, particularly requested for cloud computing, where users get root access to virtual machine.
 
+![How WNoDeS works]({{site.baseurl}}/images/dvn_components.png) 
+
 ### VIP
 
 WNoDeS Virtual Interactive Pool [2] is an on-demand provisioning of virtual user interfaces for local users out of a common resource pool.
