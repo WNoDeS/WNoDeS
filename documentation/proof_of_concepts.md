@@ -23,6 +23,8 @@ VLANs provide network isolation, particularly requested for cloud computing, whe
 
 ![How WNoDeS works]({{site.baseurl}}/images/dvn_components.png) 
 
+_Figure 1: Dvn components_
+
 ### VIP
 
 WNoDeS Virtual Interactive Pool [2] is an on-demand provisioning of virtual user interfaces for local users out of a common resource pool.
@@ -33,6 +35,7 @@ A caching mechanism is available, to reduce system provisioning time.
 
 <iframe src="http://prezi.com/embed/9dyfwjybq9b-/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=0&amp;autohide_ctrls=0&amp;features=undefined&amp;disabled_features=undefined" width="550" height="400" frameBorder="0"></iframe>
 
+_Figure 2: VIP presentation_
 
 
 **References**
