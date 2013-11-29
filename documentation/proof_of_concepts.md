@@ -14,12 +14,17 @@ However, in large computing centers, due for example to the number of installed 
 
 WNoDeS DVN [1] is a solution to the problem of dynamic virtual networking based on the use of the Generic Routing Encapsulation Protocol.
 GRE is used to encapsulate VM traffic so that the configuration of the physical network switches doesn't have to change.
-This solution can be used to tackle problems such as dynamic network isolation and mobility of VMs across hosts.
+This solution can be used to tackle problems such as dynamic network isolation and mobility of VMs across hosts:
 
-* Reduce the network broadcast domain.
-* Grant different network access polices to every virtual machine.
+* by reducing the network broadcast domain.
+* by granting different network access polices to every virtual machine.
 
 VLANs provide network isolation, particularly requested for cloud computing, where users get root access to virtual machine.
+
+Figure 1 shows the interaction between DVN system components. The DVN Manager provides methods to create, modify, monitor and destroy virtual networks, keeping information about network status and allocation in a local database;
+the current implementation uses SQLite as database backend.
+The Policy Enforcement Service (PES) is the component supporting different service classes for different tenants using the same physical network infrastructure.
+Its role is to man- age the traffic control policies to be applied to each virtual network.
 
 ![How WNoDeS works]({{site.baseurl}}/images/dvn_components.png) 
 
