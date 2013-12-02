@@ -19,8 +19,6 @@ You can find [general EMI 3 installation instructions](https://twiki.cern.ch/twi
 	wget http://emisoft.web.cern.ch/emisoft/dist/EMI/3/sl5/x86_64/base/emi-release-3.0.0-2.el5.noarch.rpm
 	yum localinstall -y emi-release-3.0.0-2.el5.noarch.rpm
 
-Follow the [system administration guide]({{ site.baseurl }}/documentation/sysadmin-guide/{{ site.sysadmin_guide_version}}/) for detailed installation instructions.
-
 #### WNoDeS
 
 Note that the WNoDeS PT repositories only provide the latest version of the certified WNoDeS packages.
@@ -30,6 +28,10 @@ To install the repository files, run the following commands (as root):
 
     (SL5) # wget http://wnodes_sl5.repo -O /etc/yum.repos.d/wnodes_sl5.repo
     (SL6) # wget http://wnodes_sl6.repo -O /etc/yum.repos.d/wnodes_sl6.repo
+
+### Installation and other instructions 
+
+Follow the [system administration guide]({{ site.baseurl }}/documentation/sysadmin-guide/{{ site.sysadmin_guide_version}}/) for detailed installation instructions.
 
 ---
 
