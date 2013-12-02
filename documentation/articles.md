@@ -59,12 +59,12 @@ _Vincenzo Ciaschini and Davide Salomoni_
 ### 2010
 ##### Virtual pools for interactive analysis and software development through an integrated Cloud environment
 _Claudio Grandi, Alessandro Italiano, Davide Salomoni, Anna Karen Calabrese Melcarne_  
-CHEP 2010, 18-22 October, Academia Sinica, Taipei, Taiwan  
+CHEP 2010, 18-22 October, Academia Sinica, Taipei, Taiwan [Downolad pdf](http://iopscience.iop.org/1742-6596/331/7/072017/pdf/1742-6596_331_7_072017.pdf)
 
 ##### WNoDeS, a tool for integrated Grid and Cloud access and computing farm virtualization
 _Davide Salomoni, Alessandro Italiano, Elisabetta Ronchieri_  
-CHEP 2010, 18-22 October, Academia Sinica, Taipei, Taiwan   
+CHEP 2010, 18-22 October, Academia Sinica, Taipei, Taiwan [Downolad pdf](http://iopscience.iop.org/1742-6596/331/5/052017/pdf/1742-6596_331_5_052017.pdf)
 
 ##### An authentication gateway for integrated grid and cloud access
 _Vincenzo Ciaschini, Davide Salomoni_  
-CHEP 2010, 18-22 October, Academia Sinica, Taipei, Taiwan
+CHEP 2010, 18-22 October, Academia Sinica, Taipei, Taiwan [Downolad pdf](http://iopscience.iop.org/1742-6596/331/6/062021/pdf/1742-6596_331_6_062021.pdf)
