@@ -13,9 +13,9 @@ The other jobs dispatched on the Bait are immediately suspended.
 The Hypervisor (HV) instantiates the VM by using the requested virtual image and the job execution is migrated on the VM.
 
 ### WNoDeS process flow for batch
+![ The WNoDeS process flow.]({{site.baseurl}}/images/wnodes_process_flow.png) 
+_Figure 1 - The WNoDeS process flow._
 
-![How WNoDeS works]({{site.baseurl}}/images/wnodes_high_level.png) 
-_Figure 1 - How WNoDeS works._
 Figure 2 describes the process flow for a batch job that needs to be dispatched from the Batch System to a virtual computing resource - known as virtual job.
 A job is received by the Batch System, through whatever method is supposed (e.g., local or Grid job submission). At this point the following steps are followed:
 
@@ -32,5 +32,11 @@ A job is received by the Batch System, through whatever method is supposed (e.g.
 10. when the job finishes, a post-execution script on the VM notifies the Bait;
 11. the Bait delivers the VM and waits for a new job.
 
-![ The WNoDeS process flow.]({{site.baseurl}}/images/wnodes_architecture.png) 
-_Figure 2 - The WNoDeS process flow._
+
+<img src="{{site.baseurl}}/images/wnodes_high_level.png" alt="Job dispatching" style="width: 600px;"/>
+
+<!-- image resized original was:
+![Job dispatching]({{site.baseurl}}/images/wnodes_high_level.png)
+--> 
+
+_Figure 2 - Job dispatching._
