@@ -9,7 +9,8 @@ description: ""
 WNoDeS is characterized by the following components:   
 `bait`, `hypervisor`, `manager`, `nameserver` and `site-specific`.
 
-![The overall WNoDeS components]({{site.baseurl}}/images/stack.png)
+<img src="{{site.baseurl}}/images/stack.png" alt="The overall WNoDeS components" style="width: 400px;"/>
+
 _Figure 1 - The overall WNoDeS components_  
 
 
