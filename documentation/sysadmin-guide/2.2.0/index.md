@@ -21,7 +21,7 @@ However, if the mixed mode feature is enabled, it is also able to run real job;
 
 **Nameserver, Manager** can be considered as the information management.
 The `nameserver` is a sort of catalogue responsible for keeping trace of all the virtual machines currently running for each hypervisor, and all the virtual machine images stored in the configured repository
- (see [Section](INSERIRE LINK)).
+ (see [Installation Prerequisites](#Installation_Prerequisites)).
 The `manager` is a Command Line Interface (CLI) that is responsible for the configuration of the repository of the virtual machine images.
 It provides a set of options to handle images, VLANs, hostnames, bait and hypervisor configuration files.
 Furthermore, it supports a set of options that manage bait and hypervisor status.
@@ -38,6 +38,8 @@ _Figure 2 - Example of deployment_
 <!--
 
 COMMENTED.. TO VERIFY
+
+<a name="Quick_Start_Guide"></a>
 
 ### Quick Start Guide
 
@@ -105,6 +107,8 @@ Below an example is shown.
 
 -->
 
+<a name="Installation_Prerequisites"></a>
+
 ### Installation Prerequisites
 
 #### Operating System
@@ -169,7 +173,7 @@ Please use the following package:
 #### Hypervisor
 
 The **wnodes\_hypervisor** service can be installed on any machine, where the virtualization technology is enabled.
-As detailed in (see [Section](INSERIRE LINK)), the behaviour of the **wnodes\_hypervisor** service depend on the mixed mode feature:
+As detailed in (see [Quick Start Guide](#Quick_Start_Guide)), the behaviour of the **wnodes\_hypervisor** service depend on the mixed mode feature:
 
 * If the feature is not enabled, then the **wnodes\_hypervisor** service will instantiate a virtual machine that contains the **wnodes\_bait** service.
 Therefore, the image of that virtual machine needs to be created with the bait software and added to the WNoDeS repository before starting the **wnodes\_hypervisor** service.
@@ -186,7 +190,7 @@ Standard error and standard output files are produced under **/tmp**.
 
 #### Bait
 
-As detailed in (see [Section](INSERIRE LINK)), the installation and configuration of the **wnodes\_bait** service depend on the mixed mode feature:
+As detailed in (see [Quick Start Guide](#Quick_Start_Guide)), the installation and configuration of the **wnodes\_bait** service depend on the mixed mode feature:
 
 * If the feature is not enabled, then the **wnodes\_bait** service will run on a virtual machine that is automatically instantiated by the **wnodes\_hypervisor** service.
 * If the feature is enabled, the **wnodes\_bait** service will run on the same machine where the **wnodes\_hypervisor** service runs.
@@ -235,7 +239,7 @@ where **<VLAN\_NAME>** is the section that expresses the name of the VLAN, whose
 which is chosen when the virtual image hostnames belong to the same VLAN of the **wnodes\_hypervisor** hostname.
 The section contains the following options:
 
-`network_type` can have the OPEN value or the CLOSE value (see Table~\ref{tab:mac});
+`network_type` can have the OPEN value or the CLOSE value (see [Description of Network Type Values](#Description_of_Network_Type_Values));
 
 `bait_host` is a list of values separated by ; whose value expresses hostname and mac address linked by the ^ symbol.
 **If the mixed mode feature is enabled, *bait\_host* can be empty;**
@@ -244,11 +248,13 @@ The section contains the following options:
 
 All the hostnames must be defined in the DNS, while the mac addresses with the related IP addresses in the DHCP.
 
+<a name="Description_of_Network_Type_Values"></a>
+
 ##### Description of Network Type Values
 
-**OPEN**  It means that the related VLAN is able to access to the local network.
+`OPEN`  It means that the related VLAN is able to access to the local network.
 
-**CLOSE** It means that the related VLAN is able to access to the external network and disable to access to the local sub networks.
+`CLOSE` It means that the related VLAN is able to access to the external network and disable to access to the local sub networks.
 It is defined for the network isolation of the virtual machine in order to open to the network of virtual machine externally but not internally.
 Typically virtual machine that is used to run jobs has the **network\_type** value set to OPEN.
 
@@ -796,7 +802,7 @@ If it contains **BATCH\_REAL**, then the request will contain real jobs;
 * `IMG` is the unique identifier of the virtual image.
 It specifies the image that the px can request in order to be instantiated by the **wnodes\_hypervisor**;
 
-* `NETWORK_TYPE` can be the OPEN value or the CLOSE value (see table~\ref{tab:mac});
+* `NETWORK_TYPE` can be the OPEN value or the CLOSE value (see [Description of Network Type Values](#Description_of_Network_Type_Values));
 
 * `CPU` is the value of the virtual machine cpu;
 
@@ -823,7 +829,7 @@ If it contains **BATCH\_REAL**, then the request will contain real jobs;
 * `IMG` is the unique identifier of the virtual image.
 It specifies the image that the px can request in order to be instantiated by the **wnodes\_hypervisor**;
 
-* `NETWORK_TYPE` Its value can be: `OPEN` or `CLOSE` (see table~\ref{tab:mac});
+* `NETWORK_TYPE` Its value can be: `OPEN` or `CLOSE` (see [Description of Network Type Values](#Description_of_Network_Type_Values));
 
 * `CPU` is the value of the virtual machine cpu;
 
