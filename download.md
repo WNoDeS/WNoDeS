@@ -43,7 +43,7 @@ Follow the [system administration guide]({{ site.baseurl }}/documentation/sysadm
 
 ### Previous releases
 
-Information about previous releases can be found [here](releases.html) or on the [EMI website](http://www.eu-emi.eu).
+Information about previous releases can be found [here]({{ site.baseurl }}/documentation/releases.html) or on the [EMI website](http://www.eu-emi.eu).
 
 ---
 <!--
