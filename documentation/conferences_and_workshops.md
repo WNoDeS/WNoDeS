@@ -22,7 +22,7 @@ description: ""
 
 ### 2011
 &nbsp;<span class="label label-success">conf</span> International Supercomputing Conference, June 19\-23, Hamburg, Germany. [link](http://www.isc-events.com/isc11/)  
-&nbsp;<span class="label label-success">conf</span> International Symposium on Grids and Clouds, 19\-25 March 2011, Academia Sinica, Taipei, Taiwan. [link](http://event.twgrid.org/isgc2011/) 
+&nbsp;<span class="label label-success">conf</span> International Symposium on Grids and Clouds, 19\-25 March 2011, Academia Sinica, Taipei, Taiwan. [link](http://event.twgrid.org/isgc2011/)  
 &nbsp;<span class="label label-success">conf</span> The 20th International ACM Symposium on High-Performance Parallel and Distributing Computing, June 8\-11, San Jose, California. [link](http://www.hpdc.org/2011/)  
 
 ### 2010
