@@ -17,8 +17,8 @@ We also show the experiences matured with scientific applications, the current s
 </div>
 <div class="row">
 <div class="span6">
-#### Architectural Framework
-Architectural Overview of the WNoDeS framework
+#### Architectural Overview
+Architectural Overview of framework
 [Read more]({{site.baseurl}}/documentation/architectural_framework.html)
 
 #### Workflow
@@ -32,6 +32,10 @@ Information about mixed mode and Vlan support
 #### Virtual Image
 Details about the selection and loading of a virtual image
 [Read more]({{site.baseurl}}/documentation/virtual_image.html)
+
+#### System Administration Guide
+Detailed installation instructions.
+[Read more]({{ site.baseurl }}/documentation/sysadmin-guide/{{ site.sysadmin_guide_version}}/)
 
 </div>
 <div class="span6">
