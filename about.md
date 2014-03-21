@@ -30,5 +30,4 @@ They may not be as active in the project as they were before but they are still 
 **Daniele Andreotti**
 
 ### Acknowledgement
-Andrea Chierici, Francesco Pepe, Giacinto Donvito, Guido Potena, Luca Cestari, Marco Caberletti, Michelle Orru', Peter Solagna, 
-Stefano Dal Pra
+Andrea Chierici, Francesco Pepe, Giacinto Donvito, Guido Potena, Luca Cestari, Marco Caberletti, Michele Orru', Peter Solagna, Stefano Dal Pra
